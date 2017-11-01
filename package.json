@@ -1,0 +1,19 @@
+{
+  "name": "QQMusic",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "jquery": "^3.2.1",
+    "jquery.js": "0.0.2-security",
+    "touch": "^3.1.0",
+    "zepto-touch": "0.0.4",
+    "zepto.js": "^1.1.6"
+  }
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <!--import Css-->
+    <link rel="stylesheet" href="css/reset.min.css">
+    <link rel="stylesheet" href="css/index.css">
+    <!--rem-->
+    <script>
+        ~function () {
+            computedFont(); //页面刚加载是计算一次
+            window.addEventListener('resize',computedFont,false); //窗口大小改变，计算一次
+            function computedFont() {
+                var deviceW = document.documentElement.clientWidth; // 获取窗口的宽度
+                if(deviceW>640) return; // 如果窗口大于640，大小不在改变
+                document.documentElement.style.fontSize = deviceW/640*100+'px';
+            }
+        }();
+    </script>
+</head>
+<body>
+<section class="container">
+    <!--audio-->
+    <audio src="images/myDream.mp3" preload="none" id="musicAudio"></audio>
+    <div class="backgroundImg"></div>
+    <div class="background"></div>
+    <header class="header">
+        <div class="content">
+            <img src="./images/MyDream.jpg" alt="">
+            <h2>
+                <span>《我的梦》</span>
+                <span>&nbsp;&nbsp;张靓颖</span>
+            </h2>
+        </div>
+        <a href="javascript:;" class="musicBtn"></a>
+    </header>
+    <main class="main">
+        <div class="wrapper">
+            <p></p>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="progress">
+            <span class="current">00:00</span>
+            <span class="duration">00:00</span>
+            <div class="proBg">
+                <div class="already"></div>
+            </div>
+        </div>
+        <a href="javascript:;" class="down">
+            <i></i>
+            下载这首音乐
+        </a>
+    </footer>
+</section>
+<script src="js/zepto.min.js"></script>
+<script src="js/fastclick.js"></script>
+<script src="js/jquery.js"></script>
+<script src="js/index.js"></script>
+</body>
+</html>
